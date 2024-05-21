@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:developer';
 
 import 'package:fe_lab_clinicas_adm/src/bindings/lab_clinicas_adm_applicaiton_binding.dart';
+import 'package:fe_lab_clinicas_adm/src/core/pages/check_in/check_in_router.dart';
 import 'package:fe_lab_clinicas_adm/src/core/pages/home/home_router.dart';
 import 'package:fe_lab_clinicas_adm/src/core/pages/login/login_router.dart';
 import 'package:fe_lab_clinicas_adm/src/core/pages/pre_check_in/pre_check_in_router.dart';
@@ -35,6 +36,7 @@ class LabClinicasAdm extends StatelessWidget {
         LoginRouter(),
         HomeRouter(),
         PreCheckInRouter(),
+        CheckInRouter(),
       ],
     );
   }
