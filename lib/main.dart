@@ -4,6 +4,7 @@ import 'dart:developer';
 import 'package:fe_lab_clinicas_adm/src/bindings/lab_clinicas_adm_applicaiton_binding.dart';
 import 'package:fe_lab_clinicas_adm/src/core/pages/home/home_router.dart';
 import 'package:fe_lab_clinicas_adm/src/core/pages/login/login_router.dart';
+import 'package:fe_lab_clinicas_adm/src/core/pages/pre_check_in/pre_check_in_router.dart';
 import 'package:fe_lab_clinicas_adm/src/core/pages/splash/splash_page.dart';
 import 'package:fe_lab_clinicas_core/lab_clinicas_core_config.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +31,11 @@ class LabClinicasAdm extends StatelessWidget {
       pageBuilders: [
         FlutterGetItPageBuilder(page: (_) => const SplashPage(), path: '/'),
       ],
-      pages: const [LoginRouter(), HomeRouter()],
+      pages: const [
+        LoginRouter(),
+        HomeRouter(),
+        PreCheckInRouter(),
+      ],
     );
   }
 }

@@ -25,7 +25,7 @@ class PatientInformationFormModel {
   final String password;
   @JsonKey(name: 'date_created')
   final DateTime dateCreated;
-  final PatientInformationFormModel status;
+  final String status;
 
   factory PatientInformationFormModel.fromJson(Map<String, dynamic> json) =>
       _$PatientInformationFormModelFromJson(json);

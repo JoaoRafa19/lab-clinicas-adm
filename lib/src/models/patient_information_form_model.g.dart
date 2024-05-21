@@ -17,8 +17,7 @@ PatientInformationFormModel _$PatientInformationFormModelFromJson(
           .toList(),
       password: json['password'] as String,
       dateCreated: DateTime.parse(json['date_created'] as String),
-      status: PatientInformationFormModel.fromJson(
-          json['status'] as Map<String, dynamic>),
+      status: json['status'] as String,
     );
 
 Map<String, dynamic> _$PatientInformationFormModelToJson(

@@ -12,12 +12,14 @@ class PatientModel {
     required this.document,
     required this.address,
     required this.phoneNumber,
+    required this.guardian,
     required this.guardianIdentificationNumber,
   });
 
   String id;
   String name;
   String email;
+  String guardian;
   String document;
 
   PatientAddresModel address;
@@ -27,6 +29,7 @@ class PatientModel {
 
   @JsonKey(name: 'guardian_identification_number', defaultValue: '')
   String guardianIdentificationNumber;
+
 
   factory PatientModel.fromJson(Map<String, dynamic> json) =>
       _$PatientModelFromJson(json);
